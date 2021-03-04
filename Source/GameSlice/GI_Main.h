@@ -39,7 +39,13 @@ public:
 		TArray<FInventorySlot> KeyItemList;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int playerGold;
+		int playerGold = 500;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int MaxPlayerHealth = 12;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int CurrentPlayerHealth = 12;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audio Component")
 		UAudioComponent* SoundManager;
