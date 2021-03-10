@@ -25,7 +25,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
 		float Damage;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Base Stats")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
 		float Health;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
