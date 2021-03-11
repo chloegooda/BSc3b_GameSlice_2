@@ -58,3 +58,13 @@ void UGI_Main::RemoveKeyItem(struct FKeyItemInfo KeyItemToRemove) {
 	}
 	return;
 }
+
+void UGI_Main::ModifyHealth(int valueToAdd) {
+	currentPlayerHealth += valueToAdd;
+	if (currentPlayerHealth > maxPlayerHealth) {
+		currentPlayerHealth = maxPlayerHealth;
+	}
+	else if (currentPlayerHealth <= 0)
+		currentPlayerHealth = 0;
+	return;
+}
