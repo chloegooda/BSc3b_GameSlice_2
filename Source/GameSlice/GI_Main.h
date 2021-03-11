@@ -42,10 +42,10 @@ public:
 		int playerGold = 500;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int MaxPlayerHealth = 16;
+		int maxPlayerHealth = 16;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int CurrentPlayerHealth = 12;
+		int currentPlayerHealth = 12;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audio Component")
 		UAudioComponent* SoundManager;
@@ -64,4 +64,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 		void RemoveKeyItem(struct FKeyItemInfo KeyItemToRemove);
+
+	UFUNCTION(BlueprintCallable)
+		void ModifyHealth(int valueToAdd);
 };
