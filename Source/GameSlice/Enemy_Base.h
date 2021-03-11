@@ -26,7 +26,13 @@ public:
 		float Damage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
-		float Health;
+		float MaxHealth;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Queries")
+		float CurrentHealth;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Queries")
+		float HealthPercentage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
 		float Speed;

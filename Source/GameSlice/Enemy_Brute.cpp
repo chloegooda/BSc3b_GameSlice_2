@@ -6,8 +6,9 @@
 AEnemy_Brute::AEnemy_Brute()
 {
 	Damage = 8;
-	Health = 8;
+	MaxHealth = 8;
 	Speed = 3;
 	Range = 4;
 	IsGruntClass = false;
+	CurrentHealth = MaxHealth;
 }

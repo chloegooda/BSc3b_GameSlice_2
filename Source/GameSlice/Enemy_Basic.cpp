@@ -6,8 +6,9 @@
 AEnemy_Basic::AEnemy_Basic()
 {
 	Damage = 5;
-	Health = 5;
+	MaxHealth = 5;
 	Speed = 5;
 	Range = 2.5;
 	IsGruntClass = false;
+	CurrentHealth = MaxHealth;
 }

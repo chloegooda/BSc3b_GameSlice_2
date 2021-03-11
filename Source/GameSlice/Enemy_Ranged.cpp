@@ -6,8 +6,9 @@
 AEnemy_Ranged::AEnemy_Ranged()
 {
 	Damage = 3;
-	Health = 5;
+	MaxHealth = 5;
 	Speed = 7;
 	Range = 10;
 	IsGruntClass = false;
+	CurrentHealth = MaxHealth;
 }
