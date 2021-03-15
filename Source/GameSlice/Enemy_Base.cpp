@@ -32,3 +32,10 @@ void AEnemy_Base::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 }
 
+void AEnemy_Base::EnemyHasNoHealth(bool Value) {
+	if (CurrentHealth <= 0)
+	{
+		EnemyDead = true;
+	}
+}
+

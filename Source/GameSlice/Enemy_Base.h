@@ -43,6 +43,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Queries")
 		bool IsGruntClass;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Queries")
+		bool EnemyDead;
+
+	UFUNCTION(BlueprintCallable, Category = "Functionality")
+		void EnemyHasNoHealth(bool Value);
+
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 

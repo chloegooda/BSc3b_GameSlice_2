@@ -11,4 +11,5 @@ AEnemy_Basic::AEnemy_Basic()
 	Range = 2.5;
 	IsGruntClass = false;
 	CurrentHealth = MaxHealth;
+	EnemyDead = false;
 }
