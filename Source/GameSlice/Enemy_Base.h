@@ -40,6 +40,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
 		float Range;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Base Stats")
+		FString Type;
+
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Queries")
 		bool IsGruntClass;
 

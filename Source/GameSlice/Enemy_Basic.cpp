@@ -12,4 +12,5 @@ AEnemy_Basic::AEnemy_Basic()
 	IsGruntClass = false;
 	CurrentHealth = MaxHealth;
 	EnemyDead = false;
+	Type = "regular";
 }
