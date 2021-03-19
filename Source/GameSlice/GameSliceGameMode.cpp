@@ -13,3 +13,5 @@ AGameSliceGameMode::AGameSliceGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+
