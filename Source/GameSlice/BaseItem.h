@@ -10,7 +10,8 @@
 UENUM(BlueprintType)
 enum class ItemType : uint8 {
 	Weapon,
-	Potion
+	Potion,
+	Misc
 };
 
 USTRUCT(BlueprintType)
