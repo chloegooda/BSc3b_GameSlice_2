@@ -42,7 +42,7 @@ public:
 		int playerGold = 500;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		int maxPlayerHealth = 16;
+		int maxPlayerHealth = 12;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int currentPlayerHealth = 12;
