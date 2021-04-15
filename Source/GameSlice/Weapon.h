@@ -9,8 +9,8 @@
 UENUM(Blueprintable)
 enum class WeaponType : uint8 {
 	Sword,
-	Shield,
 	Staff,
+	Shield,
 	Axe,
 	Mace,
 	Bow,
