@@ -18,14 +18,6 @@ enum class WeaponType : uint8 {
 	Knife
 };
 
-UENUM(Blueprintable)
-enum class WeaponMaterial : uint8 {
-	Wood,
-	Iron,
-	Steel,
-	Silver
-};
-
 USTRUCT(Blueprintable)
 struct FWeaponInfo
 {
@@ -34,8 +26,6 @@ struct FWeaponInfo
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		WeaponType weaponType = WeaponType::Sword;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		WeaponMaterial material = WeaponMaterial::Wood;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int durability;
 };
