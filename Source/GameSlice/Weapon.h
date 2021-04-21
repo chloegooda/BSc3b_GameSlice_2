@@ -18,6 +18,15 @@ enum class WeaponType : uint8 {
 	Knife
 };
 
+UENUM(Blueprintable)
+enum class WeaponClass : uint8 {
+	None,
+	Sword,
+	Shield,
+	Light,
+	Heavy
+};
+
 USTRUCT(Blueprintable)
 struct FWeaponInfo
 {
@@ -26,6 +35,8 @@ struct FWeaponInfo
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		WeaponType weaponType = WeaponType::Sword;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		WeaponClass weaponClass = WeaponClass::Sword;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int durability;
 };
