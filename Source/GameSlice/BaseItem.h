@@ -32,6 +32,8 @@ public:
 		float power;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int range;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		UStaticMesh* mesh;
 };
 
 UCLASS()

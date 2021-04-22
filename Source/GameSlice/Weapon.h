@@ -8,9 +8,10 @@
 
 UENUM(Blueprintable)
 enum class WeaponType : uint8 {
+	None,
+	Shield,
 	Sword,
 	Staff,
-	Shield,
 	Axe,
 	Mace,
 	Bow,
@@ -18,11 +19,12 @@ enum class WeaponType : uint8 {
 };
 
 UENUM(Blueprintable)
-enum class WeaponMaterial : uint8 {
-	Wood,
-	Iron,
-	Steel,
-	Silver
+enum class WeaponClass : uint8 {
+	None,
+	Sword,
+	Shield,
+	Light,
+	Heavy
 };
 
 USTRUCT(Blueprintable)
@@ -34,7 +36,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		WeaponType weaponType = WeaponType::Sword;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		WeaponMaterial material = WeaponMaterial::Wood;
+		WeaponClass weaponClass = WeaponClass::Sword;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int durability;
 };

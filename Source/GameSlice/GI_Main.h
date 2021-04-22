@@ -9,6 +9,7 @@
 #include "Containers/Array.h"
 #include "Engine/GameInstance.h"
 #include "Components/AudioComponent.h"
+#include "Weapon.h"
 #include "GI_Main.generated.h"
 
 USTRUCT(BlueprintType)
@@ -46,6 +47,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int currentPlayerHealth = 12;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<WeaponClass> UnlockedWeaponClasses;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audio Component")
 		UAudioComponent* SoundManager;
