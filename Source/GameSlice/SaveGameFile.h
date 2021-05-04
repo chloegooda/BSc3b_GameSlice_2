@@ -17,6 +17,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int gold;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int currentSkillPoints;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int currentHealth;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TArray<WeaponClass> UnlockedWeaponClasses;
