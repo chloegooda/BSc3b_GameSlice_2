@@ -26,6 +26,8 @@ public:
 		TArray<FInventorySlot> ItemList;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TArray<FInventorySlot> KeyItemList;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<int> UnlockedSkillsIDList;
 };
 
 
