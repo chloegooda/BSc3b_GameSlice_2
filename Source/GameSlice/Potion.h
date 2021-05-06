@@ -13,15 +13,6 @@ enum class PotionType : uint8 {
 	Attack
 };
 
-UENUM(Blueprintable)
-enum class Element : uint8 {
-	None,
-	Fire,
-	Wind,
-	Thunder,
-	Dark
-};
-
 USTRUCT(Blueprintable)
 struct FPotionInfo
 {
@@ -30,8 +21,6 @@ struct FPotionInfo
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		PotionType potionType = PotionType::HealthBoost;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		Element element = Element::None;
 };
 
 UCLASS()
