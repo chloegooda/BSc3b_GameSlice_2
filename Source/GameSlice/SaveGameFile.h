@@ -32,6 +32,12 @@ public:
 		bool BeckyCollected;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool ChloeCollected;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Dummy1Health;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Dummy2Health;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Dummy3Health;
 };
 
 USTRUCT(BlueprintType)

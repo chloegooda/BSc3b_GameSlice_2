@@ -54,6 +54,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Audio Component")
 		UAudioComponent* SoundManager;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Dummy1Health;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Dummy2Health;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Dummy3Health;
+
 	UFUNCTION(BlueprintCallable)
 		void AddItemToInventory(struct FItemInfo NewItem);
 
