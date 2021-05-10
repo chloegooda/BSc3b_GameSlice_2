@@ -55,13 +55,13 @@ public:
 		UAudioComponent* SoundManager;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float Dummy1Health;
+		float Dummy1Health = 20;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float Dummy2Health;
+		float Dummy2Health = 20;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float Dummy3Health;
+		float Dummy3Health = 20;
 
 	UFUNCTION(BlueprintCallable)
 		void AddItemToInventory(struct FItemInfo NewItem);
