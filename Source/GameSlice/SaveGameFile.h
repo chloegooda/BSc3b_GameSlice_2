@@ -9,6 +9,32 @@
 #include "SaveGameFile.generated.h"
 
 USTRUCT(BlueprintType)
+struct FSkillPointInfo
+{
+	GENERATED_BODY();
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumSpeedPotionsUsed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumAttackPotionsUsed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumHealthPotionsUsed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumItemsBought;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumItemsSold;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumDummiesKilled;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int NumEnemiesKilled;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool BeckyCollected;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool ChloeCollected;
+};
+
+USTRUCT(BlueprintType)
 struct FPlayerSaveInfo
 {
 	GENERATED_BODY()
@@ -30,6 +56,8 @@ public:
 		TArray<int> UnlockedSkillsIDList;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TArray<int> UnlockedSkillPointsIDList;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FSkillPointInfo SkillPointInfo;
 };
 
 
