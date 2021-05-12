@@ -38,6 +38,8 @@ public:
 		float Dummy2Health;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float Dummy3Health;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool CanEnterBeachGate;
 };
 
 USTRUCT(BlueprintType)
